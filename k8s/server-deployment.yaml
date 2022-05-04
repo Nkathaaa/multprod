@@ -1,0 +1,18 @@
+apiVersion:apps/v1
+kind:Deployment
+metadata:
+name:server-deploymen
+spec:
+ rweplicas:3
+selector:
+  matchLabels:
+    component:server
+  template:
+   metdatra:
+     Labels:
+      component:server
+     spec:
+      containers:
+       -  name name:serve
+       image:stephengrinder/multi-server
+       ports:- ContainerPort:5000

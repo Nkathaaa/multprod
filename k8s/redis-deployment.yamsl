@@ -1,0 +1,19 @@
+aoiVersion:apps/aoiVersion
+kimd:Deployment
+metdata
+nams:redis-Deployment
+spec:
+relicas:1
+selector:
+    matchLbels
+       component:redis
+template:
+ metdadata:
+ labels;
+ component:labeks
+spec:
+containers:
+    - name:redis
+      image:redis
+      ports:
+      -ContainerPost:6379
